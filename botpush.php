@@ -13,7 +13,7 @@ $pushID = 'U867baa9182c133568fa3fe734f712741';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ยินดีด้วยคุณมีการนักเรียนเพิ่มกรุณาเช็คตารางสอนของคุณ http://localhost/tutor/index.php');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
