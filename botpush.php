@@ -4,11 +4,11 @@
 
 require "vendor/autoload.php";
 
-$access_token = '3ALKAbKFoGuJyJnoDdn0HeyfbxLFtEXBKiC0lFeoNl/XbL4WhoCZzefp2n7UDuXaCWfErIDro07BnZNggJmXJChXTIlMPo8LRJ+n1LEgbRUaKehDkiCr5p5CakHrPX+gauOGX/R5bB2e5yi7xjnHDAdB04t89/1O/w1cDnyilFU=';
+$access_token = 'dJ6tp05lkRY3l22t7+NiptVrAn81JGeYQhpzcOe68p3RG5HKxF1VSGRcyShq3soXOOt4AzzbesTeeXyfLz4wbBdSq6ur4W9ojxN6R/mushIf+mCjC/P6D9QIz2LQ9I7SAMSc1i4Qql/KDO5tf+aChgdB04t89/1O/w1cDnyilFU=';
 
-$channelSecret = '75c03f392f6e53d662d6f5a8db9e421f';
+$channelSecret = '08b0197e71a64a955bb405725cd38fc4';
 
-$pushID = 'U7ef7a449f2a5c2057eacfc02ba2eb286';
+$pushID = 'U867baa9182c133568fa3fe734f712741';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
