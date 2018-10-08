@@ -14,7 +14,7 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ยินดีด้วยคุณมีการนักเรียนเพิ่มกรุณาเช็คตารางสอนของคุณ http://localhost/tutor/index.php');
-$response = $bot->pushMessage($pushID, $textMessageBuilder);
+$response = $bot->pushMessage($pushID,."ใช้ IDนี้เพื่อรับการแจ้งเตือน"., $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
